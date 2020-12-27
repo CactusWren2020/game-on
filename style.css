@@ -1,0 +1,477 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Rubik', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0em;
+	line-height: 1.6em;
+	font-family: Rubik;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+	color: var(--primary);
+	margin: 0;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: 0em;
+	line-height: 1em;
+	font-family: 'Rubik';
+	font-weight: 300;
+	font-style: normal;
+	font-size: 80px;
+	letter-spacing: .01em;
+	line-height: 1.4em;
+	text-transform: none;
+	text-rendering: optimize-legibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+img {
+	border: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	padding: 0 60px;
+}
+
+section, div, footer, header {
+	/* outline: 1px dotted red; */
+}
+
+div, section, header, nav, footer {
+	display: flex;
+}
+
+.heading {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 3rem;
+}
+:root {
+	--white: white;
+	--primary: #000000;
+	--secondary: #2F4F4F;
+}
+
+/* Desktop Nav */
+
+nav {
+	min-height: 8.5vh;
+	justify-content: space-between;
+	position: relative;
+}
+
+.nav-left ul {
+	display: flex;
+	align-items: center;
+}
+
+.nav-left li {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.nav-left a {
+	font-size: 1.25rem;
+}
+
+.nav-center {
+	align-items: center;
+}
+
+.nav-center h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.nav-icons {
+	align-items: center;
+}
+
+.nav-icons i {
+	margin-left: 2rem;
+	font-size: 1.25rem;
+}
+
+.nav-right {
+	align-items: center;
+}
+
+.nav-right button {
+	display: inline-block;
+	margin-left: 4.5rem;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--white);
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.nav-right button:hover {
+	color: var(--white);
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+header {
+	min-height: 87vh;
+	background: padding-box;
+}
+
+.header-image {
+	background: url('./500X374.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-heading {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header-heading h1 {
+	font-size: 10rem;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.header-heading p{
+	color: var(--white);
+	margin-bottom: 1.5rem;
+}
+.bigger-3 {
+	font-size: 3rem;
+}
+.header-heading button {
+	display: inline-block;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--white);
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.header-heading button:hover {
+	color: var(--white);
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+/* About Section */
+
+#about {
+	min-height: 40vh;
+	justify-content: center;
+	align-items: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	
+}
+#about p {
+	font-size: 2.25rem;
+	line-height: 3.5rem;
+	width: 60vw;
+}
+.bold {
+	font-weight: 900;
+}
+/* Team Section*/
+
+#team {
+	margin-bottom: 200px;
+	align-items: center;
+	flex-direction: column;
+}
+.box-row {
+	justify-content: space-between;
+}
+#team .img-wrapper {
+	width: calc(100%/4 - 1.5rem);
+	flex-direction: column;
+}
+.img-box {
+	width: 100%;
+}
+.img-box {
+	width: 100%;
+}
+ 
+/* Merch or Slideshow */
+#merch {
+	margin-bottom: 200px;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+}
+
+.slide {
+	/* display: none; */
+	width: 100%;
+	height: 100%;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.feather.icon.icon-chevron-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+.feather.icon.icon-chevron-right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+#merch i {
+	color: var(--white);
+	font-size: 64px;
+}
+
+.active {
+	background-color: var(--primary);
+}
+
+/* Blog Excerpts */
+
+#blog {
+	/* padding-top: 200px; */
+	flex-direction: column;
+	position: relative;
+	min-height: 65vh;
+	justify-content: center;
+	background-color: var(--secondary);
+}
+#blog h2.heading {
+	position: absolute;
+	top: 25vh;
+	color: var(--white);
+	font-size: 2.5rem;
+}
+.blog-marquee {
+	margin-top: 10vh;	
+	justify-content: space-between;
+}
+.post {
+	flex-direction: column;
+	color: var(--white);
+	padding-right: 2rem;
+}
+.date, .post-title, .post-link {
+	color: inherit;
+}
+.date {
+	font-size: .9rem;
+}
+.post-link {
+	font-size: .9rem;
+	font-weight: 700;
+}
+.post-title {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+#chevron-left-blog {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+}
+
+#chevron-right-blog {
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+
+/* Calendar */
+
+#upcoming-events {
+	padding-top: 200px;
+	flex-direction: column;
+	align-items: center;
+}
+
+#upcoming-events > .calendar .heading {
+	font-size: 2rem;
+	font-weight: 200;
+	text-transform: none;
+	justify-content: center;
+}
+.month-indicator {
+	justify-content: center;
+	margin-top: 50px;
+}
+.calendar {
+	flex-direction: column;
+}
+.day-of-week, .date-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+.day-of-week div {
+	color: var(--secondary);
+	text-transform: uppercase;
+	font-size: .7rem;
+	justify-content: center;
+}
+#upcoming-events button {
+	height: 124px;
+	width: 124px;
+	color: var(--secondary);
+	background-color: #f8f8f8;
+	border-style: solid;
+	border-color: #f8f8f8;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	font-size: .7rem;
+}
+button time {
+	position: absolute;
+	top: 0;
+	right: 5%;
+}
+
+/* Our Partners */
+
+#our-partners {
+	margin-top: 200px;
+	flex-direction: column;
+	align-items: center;
+	min-height: 33vh;
+	padding-bottom: 100px;
+}
+
+/* Footer */
+
+footer.container {
+	min-height: 25vh;
+	background-color: var(--secondary);
+	flex-direction: column;
+	align-items:center;
+	padding-top: 100px;
+}
+footer h3, footer p, footer a, footer i {
+	color: var(--white);
+}
+.inner-footer {
+	width: 100%;
+	padding-bottom: 150px;
+}
+.inner-footer > div {
+	width: calc(100%/3);
+	align-items: center;
+}
+footer h3 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+#contact {
+	flex-direction: column;
+	justify-content: center;
+}
+.footer-logo {
+	justify-content:center;
+	color: var(--white);
+	font-size: 3em;
+}
+.logo-container {
+	width: 100%;
+	
+}
+#follow {
+	flex-direction: column;
+	justify-content: center;
+}
+#our-partners .heading {
+	margin-bottom: 150px;
+}
+.partner-logo {
+	width: calc(25%);
+	justify-content: center;
+	font-size: 2.8rem;
+}
+
+footer {
+	background-color: var(--secondary);
+}

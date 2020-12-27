@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Game On</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
+
+</head>
+
+<body>
+     <nav class="container">
+       <div class="nav-left">
+         <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Schedule</a></li>
+           <li><a href="#">Merch</a></li>
+           <li><a href="#">Blog</a></li>
+         </ul>
+       </div>
+       <div class="nav-center">
+         <h1>GAME ON</h1>
+       </div>
+       <div class="nav-right">
+         <div class="nav-icons">
+          <i class="feather icon icon-mail"></i>
+          <i class="feather icon icon-facebook"></i>
+          <i class="feather icon icon-instagram"></i>
+          <i class="feather icon icon-instagram"></i>
+         </div>
+         <button>Contact</button>
+       </div>
+     </nav>
+
+    <header class="container"> 
+      <div class="header-image">
+        <div class="header-heading">
+          <h1>Game On</h1>
+          <p>
+            The game begins on Sunday night at 8 PM. Be there or be <span class="bigger-3">&#9633;</span>
+          </p>
+          <button>Contact</button>
+        </div>
+      </div>
+      
+    </header>
+  
+    <section id="about" class="container">
+      <p>
+        <span class="bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Nam purus massa, consectetur vel dolor eget, commodo vulputate lorem. Curabitur quis sollicitudin eros, nec viverra velit. Phasellus sagittis nisi et diam placerat volutpat. 
+      </p>
+    </section>
+
+    <section id="team" class="container">
+      <h2 class="heading">TEAM</h2>
+      <div class="box-row">
+        <div class="img-wrapper">
+          <img class="img-box"src="500X778.jpg"/>
+          <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="img-wrapper">
+          <img class="img-box"src="500X778.jpg"/>
+          <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="img-wrapper">
+          <img class="img-box"src="500X778.jpg"/>
+          <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="img-wrapper">
+          <img class="img-box"src="500X778.jpg"/>
+          <h3>Lorem Ipsum</h3>
+        </div>
+  
+      </div>
+      
+    </section>
+<section id="merch">
+  <!--slideshow-->
+  <h2 class="heading">MERCH</h2>
+  <div class="slide fade">
+    <img src="750X464.jpg"/>
+  </div>
+  <div class="slide fade">
+    <img src="750X464.jpg"/>
+  </div>
+  <div class="slide fade">
+    <img src="750X464.jpg"/>
+  </div>
+
+  <a onclick="plusSlides(-1)" id="chevron-left">
+    <i class="feather icon icon-chevron-left"></i>
+  </a>
+  <a onclick="plusSlides(-1)" id="chevron-right">
+    <i class="feather icon icon-chevron-right"></i>
+  </a>
+
+</section>
+
+    <section id="blog" class="container">
+      <h2 class="heading">BLOG</h2>
+      <div class="blog-marquee">
+        <div class="post">
+          <p class="date">December 27, 2020
+          </p>
+          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+        <div class="post">
+          <p class="date">December 27, 2020
+          </p>
+          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+        <div class="post">
+          <p class="date">December 27, 2020
+          </p>
+          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+        <div class="post">
+          <p class="date">December 27, 2020
+          </p>
+          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+      </div>
+      <a onclick="" id="chevron-left-blog">
+        <i class="feather icon icon-chevron-left"></i>
+      </a>
+      <a onclick="" id="chevron-right-blog">
+        <i class="feather icon icon-chevron-right"></i>
+      </a>
+    </section>
+
+    <section id="upcoming-events">
+      <h2 class="heading">Upcoming Events</h2>
+      <div class="calendar">
+        <!--from article: https://zellwk.com/blog/calendar-with-css-grid/-->
+        <div class="month-indicator">
+          <h2 class="heading">February 2020</h2>
+        </div>
+        <div class="day-of-week">
+          <div>Su</div>
+          <div>Mo</div>
+          <div>Tu</div>
+          <div>We</div>
+          <div>Th</div>
+          <div>Fr</div>
+          <div>Sa</div>
+        </div>
+        <div class="date-grid">
+          <button><time datetime="2019-02-01">1</time></button>
+          <button><time datetime="2019-02-02">2</time></button>
+          <button><time datetime="2019-02-03">3</time></button>
+          <button><time datetime="2019-02-01">4</time></button>
+          <button><time datetime="2019-02-02">5</time></button>
+          <button><time datetime="2019-02-03">6</time></button>
+          <button><time datetime="2019-02-04">7</time></button>
+
+          <button><time datetime="2019-02-01">8</time></button>
+          <button><time datetime="2019-02-02">9</time></button>
+          <button><time datetime="2019-02-03">10</time></button>
+          <button><time datetime="2019-02-01">11</time></button>
+          <button><time datetime="2019-02-02">12</time></button>
+          <button><time datetime="2019-02-03">13</time></button>
+          <button><time datetime="2019-02-04">14</time></button>
+
+          <button><time datetime="2019-02-01">15</time></button>
+          <button><time datetime="2019-02-02">16</time></button>
+          <button><time datetime="2019-02-03">17</time></button>
+          <button><time datetime="2019-02-01">18</time></button>
+          <button><time datetime="2019-02-02">19</time></button>
+          <button><time datetime="2019-02-03">20</time></button>
+          <button><time datetime="2019-02-04">21</time></button>
+
+          <button><time datetime="2019-02-01">22</time></button>
+          <button><time datetime="2019-02-02">23</time></button>
+          <button><time datetime="2019-02-03">24</time></button>
+          <button><time datetime="2019-02-01">25</time></button>
+          <button><time datetime="2019-02-02">26</time></button>
+          <button><time datetime="2019-02-03">27</time></button>
+          <button><time datetime="2019-02-04">28</time></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-partners" class="container">
+      <h2 class="heading">Our Partners</h2>
+      <div class="logo-container">
+        <div class="partner-logo">
+          EXTRAGOOD
+        </div>
+        <div class="partner-logo" style="font-style: bold">
+          BORD
+        </div>
+        <div class="partner-logo" style="font-style: italic">
+          Clarita
+        </div>
+        <div class="partner-logo"> 
+          absinthe
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="inner-footer">
+        <div id="contact">
+          <h3>Contact</h3>
+          <p>
+            info@gameon.com
+          </p>
+        </div>
+        <div class="footer-logo">
+          G
+        </div>
+        <div id="follow">
+          <h3>Follow</h3>
+          <div class="footer-icons">
+            <i class="feather icon icon-mail"></i>
+            <i class="feather icon icon-facebook"></i>
+            <i class="feather icon icon-instagram"></i>
+            <i class="feather icon icon-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <p>Made by <a href="#">Mikecho.dev</a></p>
+    </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
