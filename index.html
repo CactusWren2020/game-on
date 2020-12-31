@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-     <nav class="container">
+     <nav id="main-nav" class="container">
        <div class="nav-left">
          <ul>
            <li><a href="#">Home</a></li>
@@ -35,13 +35,59 @@
           <i class="feather icon icon-instagram"></i>
           <i class="feather icon icon-instagram"></i>
          </div>
-         <button>Contact</button>
+         <button class="nav-right-button">Contact</button>
        </div>
      </nav>
 
+    <!--mobile menu section-->
+    <nav id="mobile-nav" class="container">
+      <div class="nav-center">
+        <h1>GAME ON</h1>
+      </div>
+      <div class="top-right">
+        
+        <button id="mobile-menu-button" class="Mobile-bar-menu" class="menu-icon">
+          <svg id="hamburger-icon" viewBox="0 0 100 80"  width="40" height="40">
+            <!-- <rect width="100" height="10"></rect> -->
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+          <svg id="x-icon"class="hidden" height="40" width="40">
+            <text x="0" y="38"  fill="red" aria-label="Close Mobile Menu">✕</text>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu closed">
+       
+        <div style="height: 10vh"></div>
+        <nav class="nav-mobile">
+          <h3><a href="#">Home</a></h3>
+          <h3><a href="#">Blog</a></h3>
+          <h3><a href="#">About</a></h3>
+        </nav>
+        <div class="nav-right nav-right-mobile">
+          <div class="nav-icons nav-icons-mobile">
+           <i class="feather icon icon-mail"></i>
+           <i class="feather icon icon-facebook"></i>
+           <i class="feather icon icon-instagram"></i>
+           <i class="feather icon icon-instagram"></i>
+          </div>
+          
+        </div>
+        <button class='nav-right-button  nav-right-button-mobile'>Contact</button>
+      </div>
+  
+      <!--end mobile menu section-->
+      
+
+    </nav>
+
+ 
+
     <header class="container"> 
       <div class="header-image">
-        <div class="header-heading">
+        <div class="header-heading module">
           <h1>Game On</h1>
           <p>
             The game begins on Sunday night at 8 PM. Be there or be <span class="bigger-3">&#9633;</span>
@@ -53,98 +99,106 @@
     </header>
   
     <section id="about" class="container">
-      <p>
-        <span class="bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Nam purus massa, consectetur vel dolor eget, commodo vulputate lorem. Curabitur quis sollicitudin eros, nec viverra velit. Phasellus sagittis nisi et diam placerat volutpat. 
+      <p class="module">
+        <span class="bold">Game On</span> is here to show the hottest games of the year, the decade, even of all time! Let our digital maestros guide you through a curated gallery of the best entertainment that's ever been coded. Are you not enertained? <span class="bold">Game On!</span> 
       </p>
     </section>
 
     <section id="team" class="container">
       <h2 class="heading">TEAM</h2>
       <div class="box-row">
-        <div class="img-wrapper">
-          <img class="img-box"src="500X778.jpg"/>
-          <h3>Lorem Ipsum</h3>
+        <div class="img-wrapper module">
+          <img class="img-box"src="./images/model-4268031_1280.jpg"/>
+          <h3>Jesse Chang</h3>
         </div>
-        <div class="img-wrapper">
-          <img class="img-box"src="500X778.jpg"/>
-          <h3>Lorem Ipsum</h3>
+        <div class="img-wrapper module">
+          <img class="img-box"src="./images/portrait-1874273_1280.jpg"/>
+          <h3>Geoff Jackson</h3>
         </div>
-        <div class="img-wrapper">
-          <img class="img-box"src="500X778.jpg"/>
-          <h3>Lorem Ipsum</h3>
+        <div class="img-wrapper module">
+          <img class="img-box"src="./images/portrait-3289066_1280.jpg"/>
+          <h3>Missy Rodriguez</h3>
         </div>
-        <div class="img-wrapper">
-          <img class="img-box"src="500X778.jpg"/>
-          <h3>Lorem Ipsum</h3>
+        <div class="img-wrapper module">
+          <img class="img-box"src="./images/boy-2082271_1280.jpg"/>
+          <h3>Kellen Wellesley</h3>
         </div>
   
       </div>
       
     </section>
-<section id="merch">
+<section id="merch" class="module">
   <!--slideshow-->
   <h2 class="heading">MERCH</h2>
-  <div class="slide fade">
-    <img src="750X464.jpg"/>
+  <div class="slide fade-in">
+    <img src="./images/bot-1.png">  </div>
+  <div class="slide fade-in">
+    <img src="./images/bot-2.png"/>
   </div>
-  <div class="slide fade">
-    <img src="750X464.jpg"/>
+  <div class="slide fade-in">
+    <img src="./images/bot-3.png"/>
   </div>
-  <div class="slide fade">
-    <img src="750X464.jpg"/>
+  <div class="slide fade-in">
+    <img src="./images/bot-4.png"/>
   </div>
 
   <a onclick="plusSlides(-1)" id="chevron-left">
-    <i class="feather icon icon-chevron-left"></i>
+    <!-- <i class="feather icon icon-chevron-left"></i> -->
+  &#8592
   </a>
   <a onclick="plusSlides(-1)" id="chevron-right">
-    <i class="feather icon icon-chevron-right"></i>
+    <!-- <i class="feather icon icon-chevron-right"></i> -->
+  &#8594
   </a>
 
 </section>
 
-    <section id="blog" class="container">
+
+
+    <section id="blog" class="container module">
       <h2 class="heading">BLOG</h2>
       <div class="blog-marquee">
-        <div class="post">
+        <div class="post fade-in">
           <p class="date">December 27, 2020
           </p>
-          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <h3 class="post-title">Play with me!</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
-        <div class="post">
+        <div class="post fade-in">
           <p class="date">December 27, 2020
           </p>
-          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <h3 class="post-title">Tonight, we ride</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
-        <div class="post">
+        <div class="post fade-in">
           <p class="date">December 27, 2020
           </p>
-          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <h3 class="post-title">Play is a Serious Thing</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
-        <div class="post">
+        <div class="post fade-in">
           <p class="date">December 27, 2020
           </p>
-          <h3 class="post-title">LORUM IPSUM TO DA MAX</h3>
+          <h3 class="post-title">Don't play with me? No, do.</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
       </div>
-      <a onclick="" id="chevron-left-blog">
+      <a onclick="plusPost(-1)" id="chevron-left-blog">
         <i class="feather icon icon-chevron-left"></i>
       </a>
-      <a onclick="" id="chevron-right-blog">
+      <a onclick="plusPost(1)" id="chevron-right-blog">
         <i class="feather icon icon-chevron-right"></i>
       </a>
     </section>
 
-    <section id="upcoming-events">
+    <section id="upcoming-events" class="container module">
       <h2 class="heading">Upcoming Events</h2>
       <div class="calendar">
         <!--from article: https://zellwk.com/blog/calendar-with-css-grid/-->
         <div class="month-indicator">
-          <h2 class="heading">February 2020</h2>
+          <h2 id="month-heading" class="heading">February 2021</h2>
+          <i id="month-control-left" class="feather icon icon-chevron-left"></i>
+          <i id="month-control-right" class="feather icon icon-chevron-right"></i>
         </div>
         <div class="day-of-week">
           <div>Su</div>
@@ -191,36 +245,39 @@
       </div>
     </section>
 
-    <section id="our-partners" class="container">
+    <section id="our-partners" class="container module">
       <h2 class="heading">Our Partners</h2>
       <div class="logo-container">
-        <div class="partner-logo">
-          EXTRAGOOD
+        <div class="partner-logo fader">
+          EXTRAbad
         </div>
-        <div class="partner-logo" style="font-style: bold">
+        <div class="partner-logo fader" style="font-style: bold">
           BORD
         </div>
-        <div class="partner-logo" style="font-style: italic">
+        <div class="partner-logo fader" style="font-style: italic">
           Clarita
         </div>
-        <div class="partner-logo"> 
-          absinthe
+        <div class="partner-logo fader"> 
+          absentia
         </div>
       </div>
     </section>
 
-    <footer class="container">
+    <footer class="container module">
       <div class="inner-footer">
-        <div id="contact">
+        <div id="contact" class="fader">
           <h3>Contact</h3>
           <p>
             info@gameon.com
           </p>
         </div>
-        <div class="footer-logo">
-          G
+        <div class="footer-logo fader">
+          <h2 class="footer-logo-logo">
+            Game On
+          </h2>
+          
         </div>
-        <div id="follow">
+        <div id="follow" class="fader">
           <h3>Follow</h3>
           <div class="footer-icons">
             <i class="feather icon icon-mail"></i>
@@ -230,8 +287,14 @@
           </div>
         </div>
       </div>
-      <p>Made by <a href="#">Mikecho.dev</a></p>
+      <div class="colophon">
+        <p class="fader">Made by <a href="#">Mikecho.dev</a></p>
+      </div>
+      
     </footer>
+
+     
+
 
   <script src="scripts.js"></script>
 </body>
