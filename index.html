@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="calendar.css">
 </head>
 
 <body>
@@ -20,22 +21,23 @@
        <div class="nav-left">
          <ul>
            <li><a href="#">Home</a></li>
-           <li><a href="#">Schedule</a></li>
-           <li><a href="#">Merch</a></li>
-           <li><a href="#">Blog</a></li>
+           <li><a href="#calendar">Schedule</a></li>
+           <li><a href="#merch">Merch</a></li>
+           <li><a href="#blog">Blog</a></li>
          </ul>
        </div>
        <div class="nav-center">
-         <h1>GAME ON</h1>
+         <a href="" class="inherit"><h1>GAME ON</h1></a>
        </div>
        <div class="nav-right">
          <div class="nav-icons">
-          <i class="feather icon icon-mail"></i>
-          <i class="feather icon icon-facebook"></i>
-          <i class="feather icon icon-instagram"></i>
-          <i class="feather icon icon-instagram"></i>
+          <a href=""><i class="feather icon icon-mail"> </i></a>
+            <a href=""><i class="feather icon icon-facebook"> </i>
+            </a>
+            <a href=""><i class="feather icon icon-instagram"> </i></a>
+            <a href=""><i class="feather icon icon-twitter"></i></a>
          </div>
-         <button class="nav-right-button">Contact</button>
+         <button class="nav-right-button"><a href="" class="inherit">Contact</a></button> 
        </div>
      </nav>
 
@@ -48,7 +50,6 @@
         
         <button id="mobile-menu-button" class="Mobile-bar-menu" class="menu-icon">
           <svg id="hamburger-icon" viewBox="0 0 100 80"  width="40" height="40">
-            <!-- <rect width="100" height="10"></rect> -->
             <rect y="30" width="100" height="10"></rect>
             <rect y="60" width="100" height="10"></rect>
           </svg>
@@ -63,16 +64,16 @@
         <div style="height: 10vh"></div>
         <nav class="nav-mobile">
           <h3><a href="#">Home</a></h3>
-          <h3><a href="#">Blog</a></h3>
-          <h3><a href="#">About</a></h3>
+          <h3><a href="#blog">Blog</a></h3>
+          <h3><a href="#about">About</a></h3>
         </nav>
         <div class="nav-right nav-right-mobile">
           <div class="nav-icons nav-icons-mobile">
-           <i class="feather icon icon-mail"></i>
-           <i class="feather icon icon-facebook"></i>
-           <i class="feather icon icon-instagram"></i>
-           <i class="feather icon icon-instagram"></i>
-          </div>
+            <a href=""><i class="feather icon icon-mail"> </i></a>
+            <a href=""><i class="feather icon icon-facebook"> </i>
+            </a>
+            <a href=""><i class="feather icon icon-instagram"> </i></a>
+            <a href=""><i class="feather icon icon-twitter"></i></a>
           
         </div>
         <button class='nav-right-button  nav-right-button-mobile'>Contact</button>
@@ -83,16 +84,18 @@
 
     </nav>
 
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">&#8963;</button>
+
  
 
     <header class="container"> 
       <div class="header-image">
-        <div class="header-heading module">
+        <div class="header-heading">
           <h1>Game On</h1>
           <p>
             The game begins on Sunday night at 8 PM. Be there or be <span class="bigger-3">&#9633;</span>
           </p>
-          <button>Contact</button>
+          <a class="inherit" href=""><button>Contact</button></a>
         </div>
       </div>
       
@@ -143,11 +146,9 @@
   </div>
 
   <a onclick="plusSlides(-1)" id="chevron-left">
-    <!-- <i class="feather icon icon-chevron-left"></i> -->
   &#8592
   </a>
   <a onclick="plusSlides(-1)" id="chevron-right">
-    <!-- <i class="feather icon icon-chevron-right"></i> -->
   &#8594
   </a>
 
@@ -159,19 +160,19 @@
       <h2 class="heading">BLOG</h2>
       <div class="blog-marquee">
         <div class="post fade-in">
-          <p class="date">December 27, 2020
+          <p class="date">December 1, 2020
           </p>
           <h3 class="post-title">Play with me!</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
         <div class="post fade-in">
-          <p class="date">December 27, 2020
+          <p class="date">December 7, 2020
           </p>
           <h3 class="post-title">Tonight, we ride</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
         <div class="post fade-in">
-          <p class="date">December 27, 2020
+          <p class="date">December 17, 2020
           </p>
           <h3 class="post-title">Play is a Serious Thing</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
@@ -180,6 +181,18 @@
           <p class="date">December 27, 2020
           </p>
           <h3 class="post-title">Don't play with me? No, do.</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+        <div class="post fade-in">
+          <p class="date">December 31, 2020
+          </p>
+          <h3 class="post-title">2020 Will Soon be Over!.</h3>
+          <a class="post-link" href="#">Read More &#8594;</a>
+        </div>
+        <div class="post fade-in">
+          <p class="date">January 1, 2021
+          </p>
+          <h3 class="post-title">Happy No More 2020!</h3>
           <a class="post-link" href="#">Read More &#8594;</a>
         </div>
       </div>
@@ -191,58 +204,44 @@
       </a>
     </section>
 
-    <section id="upcoming-events" class="container module">
-      <h2 class="heading">Upcoming Events</h2>
-      <div class="calendar">
-        <!--from article: https://zellwk.com/blog/calendar-with-css-grid/-->
-        <div class="month-indicator">
-          <h2 id="month-heading" class="heading">February 2021</h2>
-          <i id="month-control-left" class="feather icon icon-chevron-left"></i>
-          <i id="month-control-right" class="feather icon icon-chevron-right"></i>
-        </div>
-        <div class="day-of-week">
-          <div>Su</div>
-          <div>Mo</div>
-          <div>Tu</div>
-          <div>We</div>
-          <div>Th</div>
-          <div>Fr</div>
-          <div>Sa</div>
-        </div>
-        <div class="date-grid">
-          <button><time datetime="2019-02-01">1</time></button>
-          <button><time datetime="2019-02-02">2</time></button>
-          <button><time datetime="2019-02-03">3</time></button>
-          <button><time datetime="2019-02-01">4</time></button>
-          <button><time datetime="2019-02-02">5</time></button>
-          <button><time datetime="2019-02-03">6</time></button>
-          <button><time datetime="2019-02-04">7</time></button>
+    
 
-          <button><time datetime="2019-02-01">8</time></button>
-          <button><time datetime="2019-02-02">9</time></button>
-          <button><time datetime="2019-02-03">10</time></button>
-          <button><time datetime="2019-02-01">11</time></button>
-          <button><time datetime="2019-02-02">12</time></button>
-          <button><time datetime="2019-02-03">13</time></button>
-          <button><time datetime="2019-02-04">14</time></button>
-
-          <button><time datetime="2019-02-01">15</time></button>
-          <button><time datetime="2019-02-02">16</time></button>
-          <button><time datetime="2019-02-03">17</time></button>
-          <button><time datetime="2019-02-01">18</time></button>
-          <button><time datetime="2019-02-02">19</time></button>
-          <button><time datetime="2019-02-03">20</time></button>
-          <button><time datetime="2019-02-04">21</time></button>
-
-          <button><time datetime="2019-02-01">22</time></button>
-          <button><time datetime="2019-02-02">23</time></button>
-          <button><time datetime="2019-02-03">24</time></button>
-          <button><time datetime="2019-02-01">25</time></button>
-          <button><time datetime="2019-02-02">26</time></button>
-          <button><time datetime="2019-02-03">27</time></button>
-          <button><time datetime="2019-02-04">28</time></button>
+    <section id="calendar" class="container">
+      <h3 class="heading">Upcoming Events</h3>
+      <div class="calendar-wrapper">
+        <div class="container-calendar">
+            <h3 id="monthAndYear"  ></h3>
+            <div class="button-container-calendar">
+                <button id="previous" onclick="previous()">&#8249;</button>
+                <button id="next" onclick="next()">&#8250;</button>
+            </div>
+            
+            <table class="table-calendar" id="calendar" data-lang="en">
+                <thead id="thead-month"></thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+            
+            <div class="footer-container-calendar">
+                <label for="month">Jump To: </label>
+                <select id="month" onchange="jump()">
+                    <option value=0>Jan</option>
+                    <option value=1>Feb</option>
+                    <option value=2>Mar</option>
+                    <option value=3>Apr</option>
+                    <option value=4>May</option>
+                    <option value=5>Jun</option>
+                    <option value=6>Jul</option>
+                    <option value=7>Aug</option>
+                    <option value=8>Sep</option>
+                    <option value=9>Oct</option>
+                    <option value=10>Nov</option>
+                    <option value=11>Dec</option>
+                </select>
+                <select id="year" onchange="jump()"></select>       
+            </div>
         </div>
       </div>
+
     </section>
 
     <section id="our-partners" class="container module">
@@ -280,10 +279,15 @@
         <div id="follow" class="fader">
           <h3>Follow</h3>
           <div class="footer-icons">
-            <i class="feather icon icon-mail"></i>
-            <i class="feather icon icon-facebook"></i>
-            <i class="feather icon icon-instagram"></i>
-            <i class="feather icon icon-instagram"></i>
+            
+            
+            
+            <a href=""><i class="feather icon icon-mail"> </i></a>
+            <a href=""><i class="feather icon icon-facebook"> </i>
+            </a>
+            <a href=""><i class="feather icon icon-instagram"> </i></a>
+            <a href=""><i class="feather icon icon-twitter"></i></a>
+
           </div>
         </div>
       </div>
@@ -297,5 +301,6 @@
 
 
   <script src="scripts.js"></script>
+  <script src="calendar.js"></script>
 </body>
 </html>

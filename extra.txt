@@ -1,0 +1,157 @@
+
+var postIndex = 1;
+showPosts(postIndex); //loads initial slides
+
+function plusPost(n) { //postIndex + 1
+  showPosts((postIndex += n));
+}
+
+function currentPost(n) { // postIndex = -1
+  showPosts((postIndex = n));
+}
+
+function showPosts(n = 0) {
+  var i;
+  var posts = document.getElementsByClassName("post");
+
+for (i = 0; i < posts.length; i++) {
+  posts[i].style.display = "none";
+}
+
+  // if (n > posts.length) {
+  //   postIndex = 1;
+  // }
+  // if (n < 1) {
+  //   postIndex = posts.length;
+  // }
+  // for (i = 0; i < posts.length; i++) {
+  //   posts[i].style.display = "none";
+  // }
+  // posts[postIndex - 1].style.display = "flex";
+  //  if (postIndex - 1 === posts.length - 1) {
+  //    posts[0].style.display = "flex";
+  //  } else {
+  //    posts[postIndex].style.display = "flex";
+  //  }
+}
+
+old calendar:
+/* Calendar */
+
+/* #upcoming-events {
+	padding-top:125px;
+	flex-direction: column;
+	align-items: center;
+}
+
+#upcoming-events > .calendar .heading {
+	font-size: 2rem;
+	font-weight: 200;
+	text-transform: none;
+	justify-content: center;
+}
+.month-indicator {
+	justify-content: center;
+	margin-top: 50px;
+	position: relative;
+}
+#upcoming-events i {
+	cursor: pointer;
+}
+
+#month-control-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+#month-control-right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+.calendar {
+	flex-direction: column;
+}
+.day-of-week, .date-grid {
+	display: grid;
+	grid-row-gap: 5px;
+	column-gap: 5px;
+	grid-template-columns: repeat(7, 1fr);
+}
+.day-of-week div {
+	color: var(--secondary);
+	text-transform: uppercase;
+	font-size: .7rem;
+	justify-content: center;
+}
+#upcoming-events button {
+	height: 124px;
+	width: 124px;
+	color: var(--secondary);
+	background-color: #f8f8f8;
+	border-style: solid;
+	border-color: #f8f8f8;
+	 
+	position: relative;
+	font-size: .7rem;
+}
+button time {
+	position: absolute;
+	top: 0;
+	right: 5%;
+} */
+
+<!-- <section id="upcoming-events" class="container module">
+      <h2 class="heading">Upcoming Events</h2>
+      <div class="calendar">
+         
+        <div class="month-indicator">
+          <h2 id="month-heading" class="heading">February 2021</h2>
+          <i id="month-control-left" class="feather icon icon-chevron-left"></i>
+          <i id="month-control-right" class="feather icon icon-chevron-right"></i>
+        </div>
+        <div class="day-of-week">
+          <div>Su</div>
+          <div>Mo</div>
+          <div>Tu</div>
+          <div>We</div>
+          <div>Th</div>
+          <div>Fr</div>
+          <div>Sa</div>
+        </div>
+        <div class="date-grid">
+          <button><time datetime="2019-02-01">1</time></button>
+          <button><time datetime="2019-02-02">2</time></button>
+          <button><time datetime="2019-02-03">3</time></button>
+          <button><time datetime="2019-02-01">4</time></button>
+          <button><time datetime="2019-02-02">5</time></button>
+          <button><time datetime="2019-02-03">6</time></button>
+          <button><time datetime="2019-02-04">7</time></button>
+
+          <button><time datetime="2019-02-01">8</time></button>
+          <button><time datetime="2019-02-02">9</time></button>
+          <button><time datetime="2019-02-03">10</time></button>
+          <button><time datetime="2019-02-01">11</time></button>
+          <button><time datetime="2019-02-02">12</time></button>
+          <button><time datetime="2019-02-03">13</time></button>
+          <button><time datetime="2019-02-04">14</time></button>
+
+          <button><time datetime="2019-02-01">15</time></button>
+          <button><time datetime="2019-02-02">16</time></button>
+          <button><time datetime="2019-02-03">17</time></button>
+          <button><time datetime="2019-02-01">18</time></button>
+          <button><time datetime="2019-02-02">19</time></button>
+          <button><time datetime="2019-02-03">20</time></button>
+          <button><time datetime="2019-02-04">21</time></button>
+
+          <button><time datetime="2019-02-01">22</time></button>
+          <button><time datetime="2019-02-02">23</time></button>
+          <button><time datetime="2019-02-03">24</time></button>
+          <button><time datetime="2019-02-01">25</time></button>
+          <button><time datetime="2019-02-02">26</time></button>
+          <button><time datetime="2019-02-03">27</time></button>
+          <button><time datetime="2019-02-04">28</time></button>
+        </div>
+      </div>
+    </section> -->
